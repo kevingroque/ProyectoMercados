@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+﻿
+<html ng-app="appmodule">
+<head>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body ng-controller="controller">
+    <h1>Consultas</h1>
+    <h2>
+        <input type="button" class="btn" value="Logout" ng-click="logout()" />
+    </h2>
+
+    <div>
+        <span>{{Message}}</span>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/app/modulo.js"></script>
+    <script src="~/Scripts/app/getToken.js"></script>
+    <script src="~/Scripts/app/controller.js"></script>
+</body>
+</html>
+
+
+
+

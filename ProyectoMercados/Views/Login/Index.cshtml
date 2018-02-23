@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+﻿
+<html ng-app="appmodule">
+<head>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body ng-controller="logincontroller">
+    <h1>Inicia Session</h1>
+    <div>
+        Usuario: <input type="text" class="form-control" ng-model="userLoginEmail" /> <br />
+        Contraseña: <input type="password" class="form-control" ng-model="userLoginPassword" /> <br />
+        <input type="button" value="Login" class="form-control btn btn-success" ng-click="login()" />
+    </div>
+    <div>
+        <span ng-model="responseData"></span>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/app/modulo.js"></script>
+    <script src="~/Scripts/app/loginlogic.js"></script>
+</body>
+</html>
+
+
